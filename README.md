@@ -4,6 +4,25 @@ A Simple JavaScript Sprite Library
 It Has Costumes(layers) for each sprite, and yuo can change or move each sprite on the canvas.
 Effects can be applied to the canvas (such as Bloom effect)
 
+Start By Including it into your HTML File:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+  
+  <script src="path/to/sprite.min.js"></script>
+</body>
+</html>
+```
+
+Using SpriteJS
+
 Get Started By creating a new canvas, and a sprite
 
 ```js
