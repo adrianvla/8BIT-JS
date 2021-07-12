@@ -1,4 +1,4 @@
-# SpriteJS
+# 8BIT-JS
 A Simple JavaScript Sprite Library
 
 It Has Costumes(layers) for each sprite, and yuo can change or move each sprite on the canvas.
@@ -16,12 +16,12 @@ Start By Including it into your HTML File:
 <body>
     
   
-  <script src="path/to/sprite.min.js"></script>
+  <script src="path/to/8bit.min.js"></script>
 </body>
 </html>
 ```
 
-<h1>Using SpriteJS</h1>
+<h1>Using 8BIT-JS</h1>
 
 Get Started By creating a new canvas, and a sprite
 
