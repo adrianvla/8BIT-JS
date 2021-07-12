@@ -21,7 +21,7 @@ Start By Including it into your HTML File:
 </html>
 ```
 
-Using SpriteJS
+<h1>Using SpriteJS</h1>
 
 Get Started By creating a new canvas, and a sprite
 
