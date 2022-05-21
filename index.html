@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Engine</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        @font-face{
+            src:url("assets/fonts/FutilePro.ttf");
+            font-family:ExpressionPro;
+        }
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            height: 100%;
+            width: 100%;
+            background: #171717;
+        }
+        
+        html {
+            height: 100%;
+            width: 100%;
+        }
+        
+        #canvas,#postprocess {
+            display: none;
+        }
+        #info{
+            position:absolute;
+            font-size:75px;
+            color:#eee;
+            left:0;
+            font-family:ExpressionPro;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="info"></div>
+    <canvas id='i' width='960' height='720'></canvas>
+    <canvas id='postprocess' width='960' height='720'></canvas>
+    <canvas id='canvas' width='320' height='240'></canvas>
+
+
+    <script src="stackblur.js"></script>
+    <script src="fisheye.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
