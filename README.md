@@ -322,3 +322,8 @@ var mouse = {}; //mouse coords object
 
 using Stackblur @copyright (c) 2010 Mario Klingemann
 using Fisheye.js Copyright (c) 2015 Eric Leong
+
+
+# License
+
+### By using, adapting, downloading this in any shape or form, you agree to [CC By Sa](https://creativecommons.org/licenses/by-sa/4.0/). This work is licensed under this license (except for Fisheye.js and Stackblur whose copyrights are reserved to their respectful owners)
