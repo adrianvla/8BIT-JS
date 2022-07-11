@@ -318,6 +318,155 @@ var mouse = {}; //mouse coords object
 ```
 
 
+# Documentation
+
+## Canvas(Dom_canvas_element,game)
+
+### .img(src,x,y)
+draws the image with src "src" and on the coords [x,y]
+
+### .imge(src,x,y,potentialWidth,potentialHeight)
+draws the image with src "src" and on the coords [x,y] with optional Width and Height
+
+### .dataURL(type,encoderOptions)
+more docs at https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL
+
+### .imgo(Image_object, x,y,callback)
+On load of Image_object (that should be declared as new Image()), the image will be drawn at x,y position on the canvas and the callback will be called
+
+### .ctx()
+returns the 2d context of the canvas
+
+### .fr(style,x,y,width,height)
+basic fillrect
+
+### .get(x,y)
+get the hex color value at x,y
+
+### .plasma(Intensity)
+cool graphical effect
+
+### .postprocess()
+####    .bloom(intensity, radius, quality, operation)
+operation is the context globalCompositeOperation like blend mode
+
+####    .lighten (alpha, operation)
+same as bloom
+
+####    .motionblur(alpha)
+explains everything
+
+### .filter(red_function, green_function, blue_function)
+filters every pixel of the canvas using red, green, and blue functions that should return a value between 0 and 255
+
+### .clear(color)
+color is optional for color of the clear. Functions a little bit like .fr(color,0,0,canvas_width,canvas_height)
+
+### .gete()
+returns the DOM canvas element of the canvas
+
+### .getSprites()
+returns all of the sprites that are on the canvas
+
+### .scrollTo(x,y,easing_function)
+scrolls to x,y, with an easing function that inputs and outputs integers between 0 and 1
+
+### .setCamZ(z_index)
+sets the z-index of the camera
+
+
+## ParticleSystem(sprite, color, count, speed, to, from, texture)
+texture is an Image like texture = new Image()
+
+### .destroy()
+destroys the particle system
+
+## Sprite(Canvas, Game, z_index)
+
+### .createPhysics(physx)
+doesn't do anything
+
+### .createParticleSystem(color, count, speed, to, from, texture)
+Creates a particle system on sprite, sprite is now a particle system
+
+### .setInfinite(isInfinite)
+If true, enables infinite scrolling
+
+### .render()
+renders the sprite on the canvas
+
+### .move(dx,dy)
+moves by dx,dy <- those are relative values
+
+### .put(x,y)
+moves to x,y
+
+### .getpos()
+returns the position of the sprite
+
+### .get()
+returns the sprite
+
+### .ccostume(costume_name,new_costume)
+Like in scratch, changes the costume with the name costume_name to new_costume that's an image
+
+### .scostume(costume_name)
+changes the costume to costume_name of the sprite
+
+### .stamp()
+renders the sprite, same as render()
+
+### .canbeScrolled(Q)
+If Q is true, the sprite will be able to be scrolled. If Q is false, the sprite will have like position:absolute
+
+### .setZ(z_index)
+sets the z index of the sprite
+
+### .isInFront(yes_or_no)
+Is in front of every other sprite
+
+### .setAlpha(alpha)
+sets the opacity of the sprite
+
+### .setScale(scale)
+sets the scale of the sprite
+### .destroy()
+destroys the sprite
+
+
+## Game(updates_per_second)
+
+### .setup(function)
+runs the setup function once, used to load everything
+
+### .gameloop(Game_Loop)
+attaches a new game loop to the game
+
+### .destroy()
+destroys the game
+
+## GameLoop(function)
+To be attached to Game, this will run at the games updates_per_second
+
+### .setActive(boolean)
+Will run or no
+
+### .setinterval(id,game)
+will add an interval to the game, not recommended to use
+
+### .destroy()
+destroys the gameloop
+
+## SpriteSheet(Image,single_sprite_width,single_sprite_height)
+
+### .get(num)
+will give you an image at the num position. Num is the sprite number. Counting from left to right, top to bottom.
+
+## Physics(sprite)
+not recommended
+
+
+
 # credits
 
 using Stackblur @copyright (c) 2010 Mario Klingemann
@@ -327,3 +476,5 @@ using Fisheye.js Copyright (c) 2015 Eric Leong
 # License
 
 ### By using, adapting, downloading this in any shape or form, you agree to [CC By Sa](https://creativecommons.org/licenses/by-sa/4.0/). This work is licensed under this license (except for Fisheye.js and Stackblur whose copyrights are reserved to their respectful owners)
+
+
