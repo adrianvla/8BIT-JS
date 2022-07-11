@@ -98,7 +98,7 @@ var mouse = {}; //mouse coords object
 
 
 # Another example
-
+(live demo is [here](https://adrianvla.github.io/8BIT-JS-Example/))
 ```js
 
 
