@@ -471,7 +471,7 @@ not recommended
 
 using Stackblur @copyright (c) 2010 Mario Klingemann
 using Fisheye.js Copyright (c) 2015 Eric Leong
-
+using the Background images and font that I've downloaded from Itch.io, I don't remember the names of the creators. If you are the creator and wish to claim your credit here, please write this in issues. Thank you! :)
 
 # License
 
