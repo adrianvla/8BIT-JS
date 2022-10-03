@@ -1,6 +1,8 @@
 # 8BIT-JS
 A Simple JavaScript Sprite Library
 
+<video controls="" src="https://adrianvla.github.io/morisinc-cdn/2022-07-11%2016-27-26.mp4" alt="" style="width:400px"></video>
+
 It Has Costumes(layers) for each sprite, and yuo can change or move each sprite on the canvas.
 Effects can be applied to the canvas (such as Bloom effect)
 
