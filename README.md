@@ -1,10 +1,11 @@
 # 8BIT-JS
-A Simple JavaScript Sprite Library
+A Simple JavaScript game engine for retro games
 
-<video controls="" src="https://adrianvla.github.io/morisinc-cdn/2022-07-11%2016-27-26.mp4" alt="" style="width:400px"></video>
+<img src="https://user-images.githubusercontent.com/86854740/193573086-e7a7f515-8a6a-4e63-9f54-0da5b0b156f3.gif" style="width:300px">
 
-It Has Costumes(layers) for each sprite, and yuo can change or move each sprite on the canvas.
-Effects can be applied to the canvas (such as Bloom effect)
+It Has Costumes(layers) for each sprite, and you can change or move each sprite on the canvas.
+Effects can be applied to the canvas (such as Bloom effect).
+It even has a particle system
 
 Start By Including it into your HTML File:
 ```html
